@@ -1,0 +1,50 @@
+openapi: 3.1.0
+info:
+  title: Niva API
+  version: '2026-10-24'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-24: 1 operation(s) read from 2 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; Niva has published no machine-readable contract that the pipeline
+    could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 2
+    documentation: -1
+    pages-with-code: 2
+    pages-read: 2
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-24'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.niva.co/folder-5954051.md
+  - https://docs.niva.co/api-8802394.md
+servers:
+- url: https://api.niva.co
+paths:
+  /v1/submissions/sub_XYZ123/documents:
+    get:
+      operationId: get_v1_submissions_sub_XYZ123_documents
+      tags:
+      - Submissions
+      summary: GET /v1/submissions/sub_XYZ123/documents
+      x-source: https://docs.niva.co/api-8802394.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl 'https://api.niva.co/v1/submissions/sub_XYZ123/documents'\n          --header 'Content-Type: multipart/form-data'\n   \
+          \       --form 'type=\"mx_address_proof\"'\n          --form 'file=@\"AddressProof.pdf\"'\n          --form 'validation_inputs[name]=\"\
+          Jose Luis\"'\n        ```"
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: Apikey
+security:
+- apiKey: []
+tags:
+- name: Submissions

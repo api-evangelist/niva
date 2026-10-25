@@ -1,0 +1,18 @@
+generated: '2026-10-24'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.niva.co/doc-598656.md
+sources:
+- https://docs.niva.co/doc-598656.md
+description: Niva webhooks send HTTP POST requests to a configured URL for specific events.
+events:
+- event: submission.processed
+  description: Submission has finished processing and data is ready.
+- event: document.validated
+  description: Document validation has been completed. Document can be valid or invalid, information is in the event payload.
+delivery:
+  signature: HMAC with SHA-256 using the base64‑decoded signing secret (the part after the `whsec_` prefix). The request includes headers `webhook-id`,
+    `webhook-timestamp`, and `webhook-signature` (a space‑delimited list of Base64 signatures).
+  retries: If the endpoint does not respond with a 2XX status code within 15 seconds, Niva retries the webhook once before marking it as failed.
+note: Static source IP addresses are provided for firewall allow‑listing.
+docs: https://docs.niva.co/doc-598656.md

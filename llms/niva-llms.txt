@@ -1,0 +1,46 @@
+# Title
+
+## Docs
+- [Getting started](https://docs.niva.co/doc-598721.md): 
+- [Authentication](https://docs.niva.co/doc-598665.md): 
+- [Webhooks](https://docs.niva.co/doc-598656.md): 
+- Embeddable Widgets [Overview](https://docs.niva.co/doc-822280.md): 
+- Embeddable Widgets [Document Upload Widget](https://docs.niva.co/folder-2888731.md): 
+- Embeddable Widgets > Document Upload Widget [UI/UX Best Practices](https://docs.niva.co/doc-822390.md): 
+- Guides [Verifying a new business](https://docs.niva.co/doc-598577.md): 
+- Guides [Verifying bank accounts](https://docs.niva.co/doc-1698094.md): 
+- Guides [Uploading documents](https://docs.niva.co/doc-2438247.md): 
+- Guides [Supported document types](https://docs.niva.co/doc-599592.md): 
+- API Reference [Submissions](https://docs.niva.co/submissions.md): 
+- API Reference > Submissions [Reports](https://docs.niva.co/submission-reports.md): 
+- API Reference [Documents](https://docs.niva.co/folder-1715259.md): 
+- API Reference > Documents [Public Documents API](https://docs.niva.co/folder-5954051.md): 
+- API Reference [Utilities](https://docs.niva.co/folder-6610524.md): 
+- API Reference > Utilities [Matcher](https://docs.niva.co/folder-6610525.md): 
+
+## API Docs
+- API Reference > Submissions > Reports [List available report templates](https://docs.niva.co/api-41611192.md): Returns the report templates on your account that can be used with this submission. Templates are filtered to those whose country matches the submission's country, and are sorted by name.
+- API Reference > Submissions > Reports [Download a report](https://docs.niva.co/api-41611197.md): Generates a report for the submission from the given template and returns it as a file download. The report is built at request time from the submission's current data, so it always reflects the latest state.
+- API Reference > Submissions [Create new submission](https://docs.niva.co/api-8802390.md): Create a new submission request for a business. 
+- API Reference > Submissions [Get submission](https://docs.niva.co/api-8802391.md): Retrieve an existing submission request for a business.
+- API Reference > Submissions [Update submission](https://docs.niva.co/api-8802392.md): 
+- API Reference > Submissions [Update submission status](https://docs.niva.co/api-23307985.md): 
+- API Reference > Submissions [Run a submission pre-flight check](https://docs.niva.co/api-43074589.md): A pre-flight check evaluates the submission as a whole, using the documents you have uploaded so far, and reports whether it is in good standing for the full KYB analysis.
+- API Reference > Submissions [Run business verification](https://docs.niva.co/api-8802393.md): Run business verification for this submission after uploading documents. At least one validated document must be uploaded to run an application.
+- API Reference > Submissions [Get submission checks](https://docs.niva.co/api-18972422.md): Fetch all the checks that were run on a processed submission and their outcomes. Checks are configured based on the requirements shared with Niva.
+- API Reference > Submissions [Delete submission](https://docs.niva.co/api-19420525.md): Archive a submission. Once archived, the submission will no longer be visible in the dashboard.
+- API Reference > Documents > Public Documents API [List documents](https://docs.niva.co/api-31119284.md): Fetch documents for a submission, using your public API token and expiring submission token. You can filter the returns documents by `type`, `document_name` or `external_id`.
+- API Reference > Documents > Public Documents API [Upload document](https://docs.niva.co/api-25710910.md): Use this endpoint to upload a document directly from your website, using your public API token and expiring submission token.
+- API Reference > Documents > Public Documents API [Get document](https://docs.niva.co/api-25710936.md): Fetch extracted information for a single document
+- API Reference > Documents > Public Documents API [Delete document](https://docs.niva.co/api-25710938.md): 
+- API Reference > Documents [List documents](https://docs.niva.co/api-31119037.md): Fetch documents for a submission. You can filter the returns documents by `type`, `document_name` or `external_id`.
+- API Reference > Documents [Upload document for submission](https://docs.niva.co/api-8802394.md): Once you've created a submission request, you can then upload relevant documents prior to running the verification. 
+- API Reference > Documents [Get document](https://docs.niva.co/api-8802395.md): Fetch extracted information for a single document
+- API Reference > Documents [Delete document](https://docs.niva.co/api-8802396.md): 
+- API Reference > Documents [Download document file](https://docs.niva.co/api-14755893.md): Download the document file
+- API Reference > Documents [Rerun validations](https://docs.niva.co/api-27342318.md): Re-run validations for an existing document. You can update any custom validation inputs initially used when uploading the document.
+- API Reference > RPC Search [Get company with ID](https://docs.niva.co/api-18605104.md): Get information for a specific company in the Registro Público de Comercio using the Niva ID. Use the Company Name Search endpoint to search by company name and retrieve an ID to use here.
+- API Reference > RPC Search [Company RFC Lookup](https://docs.niva.co/api-17676856.md): Look up business information from the Registro Público de Comercio using RFC
+- API Reference > RPC Search [Company Name Search](https://docs.niva.co/api-17676881.md): Search for businesses in the Registro Público de Comercio using the name of the business. If multiple businesses with similar names are found, all will be returned. 
+- API Reference > RPC Search [Download document](https://docs.niva.co/api-13692563.md): Download a document from the RPC. The document ID is returned as part of the business search response.
+- API Reference > Utilities > Matcher [Run name matching](https://docs.niva.co/api-28295319.md): Check if two people or business names match.

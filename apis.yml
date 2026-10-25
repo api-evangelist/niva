@@ -1,25 +1,90 @@
 aid: niva
+
 name: Niva
-description: 'Niva is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by gradient-ventures) and added to the network as a stub for full-pipeline profiling.'
+
+description: "Niva provides a global business identity platform that enables institutions to verify businesses faster, safer, and smarter using AI. Their solution automates KYB processes, helping fraud and compliance teams scale with real‑time verification, risk scoring, and seamless integration."
+
 url: https://raw.githubusercontent.com/api-evangelist/niva/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
 - Company
-apis: []
+- FinTech
+- IdentityVerification
+- AI
+- Compliance
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- gradient-ventures
+
+image: https://cdn.prod.website-files.com/6632427d943f9ecea1208656/66858682853bdfa9ddc6d6ac_Niva%20share%20image.jpg
+
 common:
+- type: Spectral
+  url: rules/niva-rules.yml
+- type: Vocabulary
+  url: vocabulary/niva-vocabulary.yml
+- type: Webhooks
+  url: asyncapi/niva-webhooks.yml
+- type: Authentication
+  url: authentication/niva-authentication.yml
+- type: Conformance
+  url: conformance/niva-conformance.yml
+- type: LLMsTxt
+  url: llms/niva-llms.txt
+- type: Hosts
+  url: hosts/niva-hosts.yml
+- type: Vendors
+  url: vendors/niva-vendors.yml
+- type: TrustCenter
+  url: https://trust.niva.co/
+- type: TermsOfService
+  url: https://www.niva.co/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.niva.co/privacy-policy
+- type: Blog
+  url: https://www.niva.co/blog
+- type: GettingStarted
+  url: https://docs.niva.co/doc-598721
+- type: Documentation
+  url: https://docs.niva.co/
+- type: DomainSecurity
+  url: security/niva-domain-security.yml
 - type: Website
   url: https://www.niva.co/
+
+apis:
+- aid: niva:niva-api
+  name: Niva API
+  description: 'Niva API as documented publicly: 1 operations. Contract generated from the documentation by API Evangelist (2026-10-24); not the
+    provider''s own document.'
+  humanURL: https://docs.niva.co/folder-5954051.md
+  baseURL: https://api.niva.co
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/niva-openapi-generated.yml
+    x-provenance: generated
+
+x-backed-by:
+- gradient-ventures
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 15
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

@@ -1,0 +1,16 @@
+generated: '2026-10-24'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.niva.co/doc-598665.md
+sources:
+- https://docs.niva.co/doc-598665.md
+- https://docs.niva.co/doc-598721.md
+description: Token‑based authentication using an API token supplied in a custom header.
+schemes:
+- type: apiKey
+  name: apiKey
+  evidence: To authenticate your API requests, include the `apiKey` header with the token in your HTTP request.
+  location: header
+  header: apiKey
+  how_to_obtain: Login to the Niva portal and generate a new API token; the token is then provided to you for use in requests.
+docs: https://docs.niva.co/doc-598665.md

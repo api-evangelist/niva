@@ -1,0 +1,15 @@
+generated: '2026-10-24'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/_ae-authored/niva-openapi-generated.yml
+vocabulary:
+  name: Niva Domain Vocabulary
+  description: 'Terms declared by Niva''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions. Derived,
+    not authored.'
+  version: '2026-10-24'
+  terms:
+  - term: Submissions
+    definition: 'Resource group in the contract; its operation GET /v1/submissions/sub_XYZ123/documents: GET /v1/submissions/sub_XYZ123/documents'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/niva-openapi-generated.yml
